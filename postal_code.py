@@ -1,3 +1,5 @@
+"""UK postal code validation."""
+
 import re
 
 
