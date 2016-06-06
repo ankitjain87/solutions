@@ -11,10 +11,10 @@ def match(res):
 
 
 def is_valid(code):
-    pattern = re.compile(
-        r"^[A-Z]{1,2}[0-9R][0-9A-Z]? [0-9][ABD-HJLNP-UW-Z]{2}$")
+    pattern = re.compile(r"^[A-PR-UWYZ]([0-9]{1,2}|([A-HK-Y][0-9]([0-9ABEHMNPRV-Y])?)|[0-9][A-HJKPS-UW]) ?[0-9][ABD-HJLNP-UW-Z]{2}$")
 
     return match(pattern.match(code))
 
 
-# is_valid(raw_input())
+# print is_valid(raw_input())
+
